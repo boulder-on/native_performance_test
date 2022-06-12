@@ -51,6 +51,15 @@ The results for passing arrays of double are:
 |TestArrMain.sumArrDPassport |     1024 |  thrpt |    5 |    404050.357 | ±   2200.344 |  ops/s|
 |TestArrMain.sumArrDPassport |    16384 |  thrpt |    5 |     25093.065 | ±    936.503 |  ops/s|
 
+
+![primative performance](plots/Passing Primatives.png)
+![primative performance](plots/Array length 32.png)
+![primative performance](plots/Array length 512.png)
+![primative performance](plots/Array length 1024.png)
+![primative performance](plots/Array length 16384.png)
+
 Interestingly, at very small array sizes JNI is the clear leader, but that lead is lost
-to the Foreign Linker API when the arrays get larger. It's actually quite impressive here
-that JNA Direct competes so closely to custom JNI code. 
+to the Foreign Linker API (JPassport) when the arrays get larger. This points towards the
+foreign linker potentially working better with machine learning data.
+
+It's actually quite impressive here that JNA Direct competes so closely to custom JNI code. 
