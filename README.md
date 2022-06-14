@@ -51,12 +51,12 @@ The results for passing arrays of double are:
 |TestArrMain.sumArrDPassport |     1024 |  thrpt |    5 |    404050.357 | ±   2200.344 |  ops/s|
 |TestArrMain.sumArrDPassport |    16384 |  thrpt |    5 |     25093.065 | ±    936.503 |  ops/s|
 
+<img src="plots/passing_primatives.png" alt="primative_performance" width="50%"/>
 
-![primative_performance](plots/Passing_Primatives.png)
-![Array_performance_32](plots/array_length_32.png)
-![Array_performance_512](plots/Array length 512.png)
-![Array_performance_1024](plots/Array length 1024.png)
-![Array_performance_16K](plots/Array length 16384.png)
+|                                                                           |                                                                                |
+|---------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| <img src="plots/array_length_32.png" alt="Array_performance_32" width="100%"/> | <img src="plots/array_length_512.png" alt="Array_performance_512" width="100%"/>   |
+| <img src="plots/array_length_1024.png" alt="Array_performance_1024" width="100%"/> | <img src="plots/array_length_16384.png" alt="Array_performance_16K" width="100%"/> |
 
 Interestingly, at very small array sizes JNI is the clear leader, but that lead is lost
 to the Foreign Linker API (JPassport) when the arrays get larger. This points towards the
