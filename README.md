@@ -51,7 +51,7 @@ The results for passing arrays of double are:
 |TestArrMain.sumArrDPassport |     1024 |  thrpt |    5 |    404050.357 | ±   2200.344 |  ops/s|
 |TestArrMain.sumArrDPassport |    16384 |  thrpt |    5 |     25093.065 | ±    936.503 |  ops/s|
 
-<img src="plots/passing_primatives.png" alt="primative_performance" width="50%"/>
+<img src="plots/passing_primitives.png" alt="primative_performance" width="50%"/>
 
 |                                                                           |                                                                                |
 |---------------------------------------------------------------------------|------------------------------------------------------------------------------------|
