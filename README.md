@@ -53,10 +53,10 @@ The results for passing arrays of double are:
 
 
 ![primative_performance](plots/Passing_Primatives.png)
-![Array permormance 32](plots/Array length 32.png)
-![Array permormance 512](plots/Array length 512.png)
-![Array permormance 1024](plots/Array length 1024.png)
-![Array performance 16K](plots/Array length 16384.png)
+![Array_performance_32](plots/array_length_32.png)
+![Array_performance_512](plots/Array length 512.png)
+![Array_performance_1024](plots/Array length 1024.png)
+![Array_performance_16K](plots/Array length 16384.png)
 
 Interestingly, at very small array sizes JNI is the clear leader, but that lead is lost
 to the Foreign Linker API (JPassport) when the arrays get larger. This points towards the
