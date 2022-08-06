@@ -39,7 +39,7 @@ public class TestArrMain
         pureJava = new PureJava();
     }
 
-    @Param({"32", "512", "1024", "16384"})
+    @Param({"32", "64", "128", "256", "512", "1024", "16384"})
     public int array_size;
 
     public double[] test_arr;
