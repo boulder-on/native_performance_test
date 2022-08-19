@@ -13,8 +13,8 @@ package jpassport.performance;
 
 
 import com.sun.jna.Library;
-import jdk.incubator.foreign.MemoryAddress;
-import jdk.incubator.foreign.MemorySegment;
+//import jdk.incubator.foreign.MemoryAddress;
+//import jdk.incubator.foreign.MemorySegment;
 import jpassport.Passport;
 import jpassport.Utils;
 import jpassport.annotations.PtrPtrArg;
@@ -24,7 +24,7 @@ import jpassport.annotations.RefArg;
 public interface TestLink extends Passport, Library {
 
     double sumD(double d, double d2);
-    double sumArrD(double[] d, int len);
+    double sumArrD(@RefArg  double[] d, int len);
     double sumArrDD(double[] d, double[] d2, int len);
     void readD(@RefArg double[] d, int set);
 

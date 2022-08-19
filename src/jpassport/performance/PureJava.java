@@ -12,7 +12,7 @@
 package jpassport.performance;
 
 
-import jdk.incubator.foreign.MemoryAddress;
+//import jdk.incubator.foreign.MemoryAddress;
 
 public class PureJava implements TestLink
 {

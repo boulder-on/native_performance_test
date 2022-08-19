@@ -13,7 +13,6 @@ package jpassport.performance;
 
 
 import com.sun.jna.Native;
-import jdk.incubator.foreign.MemoryAddress;
 
 
 public class TestLinkJNADirect

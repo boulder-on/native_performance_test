@@ -1,5 +1,5 @@
 module performance.test.nat{
-    requires jdk.incubator.foreign;
+//    requires jdk.incubator.foreign;
     requires jpassport;
     requires com.sun.jna;
     requires jmh.core;

@@ -39,7 +39,8 @@ public class TestArrMain
         pureJava = new PureJava();
     }
 
-    @Param({"32", "64", "128", "256", "512", "1024", "16384"})
+    @Param({"32", "64", "128", "256", "512", "1024", "4096", "16384"})
+//    @Param({"4096"})
     public int array_size;
 
     public double[] test_arr;
@@ -52,12 +53,12 @@ public class TestArrMain
     }
 
 
-    @Benchmark
-    @Fork(value = 2, warmups = 1)
-    public void sumArrDJava()
-    {
-        pureJava.sumArrD(test_arr, test_arr.length);
-    }
+//    @Benchmark
+//    @Fork(value = 2, warmups = 1)
+//    public void sumArrDJava()
+//    {
+//        pureJava.sumArrD(test_arr, test_arr.length);
+//    }
 
     @Benchmark
     @Fork(value = 2, warmups = 1)
@@ -66,24 +67,24 @@ public class TestArrMain
         passport.sumArrD(test_arr, test_arr.length);
     }
 
-    @Benchmark
-    @Fork(value = 2, warmups = 1)
-    public void sumArrDJNI()
-    {
-        jni.sumArrD(test_arr, test_arr.length);
-    }
-
-    @Benchmark
-    @Fork(value = 2, warmups = 1)
-    public void sumArrDJNA()
-    {
-        JNA.sumArrD(test_arr, test_arr.length);
-    }
-
-    @Benchmark
-    @Fork(value = 2, warmups = 1)
-    public void sumArrDJNADirect()
-    {
-        JNADirect.sumArrD(test_arr, test_arr.length);
-    }
+//    @Benchmark
+//    @Fork(value = 2, warmups = 1)
+//    public void sumArrDJNI()
+//    {
+//        jni.sumArrD(test_arr, test_arr.length);
+//    }
+//
+//    @Benchmark
+//    @Fork(value = 2, warmups = 1)
+//    public void sumArrDJNA()
+//    {
+//        JNA.sumArrD(test_arr, test_arr.length);
+//    }
+//
+//    @Benchmark
+//    @Fork(value = 2, warmups = 1)
+//    public void sumArrDJNADirect()
+//    {
+//        JNADirect.sumArrD(test_arr, test_arr.length);
+//    }
 }
